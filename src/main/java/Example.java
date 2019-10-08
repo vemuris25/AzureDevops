@@ -1,19 +1,14 @@
-import org.springframework.boot.*;
-import org.springframework.boot.autoconfigure.*;
+//import org.springframework.boot.*;
+//import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 public class Example {
 
 	@RequestMapping("/")
-	String home() {
-		return "Hello World!";
-	}
-
-	public static void main(String[] args) {
-		SpringApplication.run(Example.class, args);
-		//System.out.println("Hello World");
+	public String index(){
+		return "Hello! This is my first Spring Boot Application Deployment";
 	}
 
 }
